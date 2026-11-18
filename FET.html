@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Registration Form</title>
+    <style>
+        /* Global Reset and Background Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Replace the URL below with any background image link of your choice */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Form Container Card */
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Typography & Tag Font Sizes */
+        h2 {
+            font-size: 26px; /* Heading font size */
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 14px; /* Label font size */
+            font-weight: 600;
+            color: #34495e;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input, select, textarea {
+            font-size: 15px; /* Input text font size */
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #3498db;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        /* Submit Button Styling */
+        button {
+            font-size: 16px; /* Button text font size */
+            font-weight: bold;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            <h2>College Student Registration</h2>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your college email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>-- Choose your course --</option>
+                <option value="btech">B.Tech Computer Science</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">B.Sc Information Technology</option>
+                <option value="bba">BBA</option>
+            </select>
+
+            <label for="address">Residential Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your permanent address" required></textarea>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+
+</body>
+</html>
